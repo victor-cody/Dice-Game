@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ikechukwu Victor">
+    <meta name="description" content="this is a web game of luck and chance where you play by rolling dices around">
+    <meta content="dice,web game," name="keywords">
+    <title>Dice game</title>
+<!-- Favicons -->
+<link href="img/dice-4.png" rel="icon">
+      <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet"> -->
+    <!-- icons -->
+    <link rel="stylesheet" href="css/ionicons/css/ionicons.css">
+    <!-- Main style sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+  <!-- =======================================================
+     URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author:victor ikechukwu
+    License: https://Gmail/vickyikechukwu13@gmail.com/
+  ======================================================= -->
+</head>
+<body>
+    
+    <main id="main" class="main">
+
+        <!-- Input field to set the wining score -->
+        <form action="" class="set-score-form" id="set-score-form">
+            <label for="set-score" class="set-btn">Set the wining score</label>
+            <input type="number" name="set-the-wining-score " id="set-score">
+            <button class="btn-submit set-btn" id="btn-submit" >Set score</button>
+        </form>
+
+        <!--Main game pannel  -->
+        <section class="game-panel">
+
+            <section class="player-1-panel player " id="player-1">
+                <h1 class="player-name" id="player-1-name">Player 1</h1>  
+                <div class="round-score score-0" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">current</div>
+                <div class="current-score" id="current-1">7</div>
+                </div>               
+            </section>
+
+            <section class="player-2-panel player" id="player-2">
+                <h1 class="player-name" id="player-2-name">Player 2</h1>   
+                <div class="round-score score-1" id="score-2">88</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">current</div>
+                <div class="current-score" id="current-2">11</div>
+                </div>           
+            </section>
+
+        </section>
+
+         <!-- dice imgs -->
+         <img src="img/dice-1.png" alt="" class="dice dice-left" id="dice-1">
+         <img src="img/dice-1.png" alt="" class="dice dice-right" id="dice-2">
+         
+         <button class="btn" id="btn-new" role="button">
+             <i class="ion-android-exit"></i>
+             New game
+         </button>
+         <button class="btn" id="btn-roll" role="button">
+             <i class="ion-android-sync"></i>
+             Roll dice
+         </button>
+         <button class="btn" id="btn-hold" role="button">
+             <i class="ion-arrow-down-c"></i>
+             Hold dice
+         </button>
+
+    </main>
+    <!-- script -->
+    <script src="JS/Dice-script.js" ></script>
+</body>
+</html>
