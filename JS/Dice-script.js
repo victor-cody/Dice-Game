@@ -86,6 +86,7 @@ function init() {
     player_2_panel.classList.remove('winner');
 
     player_1_panel.classList.add('active-player');
+    player_2_panel.classList.remove('active-player');
     console.log(`the default wining score is ${winingScore}`);
 
     
@@ -153,26 +154,27 @@ function hold() {
         }
     }
 }
+
 // Hideing our dice
-function hideDice() {
+const hideDice = () => {
     dice1.classList.add('hide')
     dice2.classList.add('hide')
 };
 
 //Displaying the dice 
-let showDice = () => {
+const showDice = () => {
     dice1.classList.remove('hide')
     dice2.classList.remove('hide')
 };
 
-function getActivePlayer() {
+const getActivePlayer = () => {
     //Trenery Operators
     activePlayer === 1 ? activePlayer = 2 : activePlayer = 1;
     currentPlayer === 0 ? currentPlayer = 1 : currentPlayer = 0;
 };
 
-//Hideing the input field 
-function hideInputField() {
+//Hiding the input field 
+const hideInputField = () => {
     setWiningScoreField.style.display = 'none';
     submitWiningScore.value = '';
 }
