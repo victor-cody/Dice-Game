@@ -2,6 +2,8 @@
 ## Welcome! 👋
 a browser based Dice game, for two Players where the play against each other
 
+<a href="https://victor-cody.github.io/Dice-Game/"> Live Demo 👋</a>
+
 <img src="img/Dice game game-playing.png" alt="a photo from gameplay">
 
 ### Rules
